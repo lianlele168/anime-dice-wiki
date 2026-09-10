@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://animedice.robloxwikihub.com/sitemap.xml
