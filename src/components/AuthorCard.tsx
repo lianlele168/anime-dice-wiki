@@ -10,7 +10,7 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Jin "Lucky" Takahashi',
+  authorName = "Roblox Wiki Hub Research Desk"Lucky" Takahashi',
   role = 'RNG Mathematician & Mythic Dice Roller',
   experience = 'Grade 10 Rebirth & 100M+ Rolls Simulated',
   patchVersion = 'Update 2 Meta Verified',
@@ -28,7 +28,7 @@ export default function AuthorCard({
             <div className="flex items-center space-x-2">
               <span className="font-bold text-white text-sm sm:text-base">{authorName}</span>
               <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                ✓ Luck Verified
+                ✓ Verified by lianlele168
               </span>
             </div>
             <p className="text-xs text-purple-200/70 mt-0.5">
@@ -50,6 +50,10 @@ export default function AuthorCard({
       <p className="text-xs sm:text-sm text-purple-200/80 mt-3 leading-relaxed italic">
         "{editorialNote}"
       </p>
+      <div className="mt-3 pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
+        <span>Methodology: <a href="https://robloxwikihub.com/about#methodology" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Roblox Wiki Hub Standards</a></span>
+        <span>Corrections: <a href="mailto:lianlele168@gmail.com" className="underline hover:text-white">lianlele168@gmail.com</a></span>
+      </div>
     </div>
   );
 }
