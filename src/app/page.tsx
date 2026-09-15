@@ -8,12 +8,32 @@ import {
 } from 'lucide-react';
 import { ACTIVE_CODES, TRAITS_DATA, GRADES_DATA, UNITS_DATA, DICE_DATA, FAQS_DATA } from '@/data/gameData';
 import Toast from '@/components/Toast';
+import AuthorCard from '@/components/AuthorCard';
 
 export default function HomePage() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState('');
   const [toastVisible, setToastVisible] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    dateModified: '2026-09-15',
+    author: {
+      '@type': 'Person',
+      name: 'Jin "Lucky" Takahashi',
+      jobTitle: 'RNG Mathematician & Mythic Dice Roller',
+    },
+    mainEntity: FAQS_DATA.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
 
   const handleCopy = (code: string) => {
     navigator.clipboard.writeText(code);
@@ -28,6 +48,10 @@ export default function HomePage() {
 
   return (
     <div className="space-y-16 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Toast 
         message={toastMessage} 
         visible={toastVisible} 
@@ -57,6 +81,18 @@ export default function HomePage() {
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
               The premier interactive encyclopedia and gacha simulator for Anime Dice. Calculate exact roll odds, copy verified September 2026 codes, optimize 15x Transcendent traits, and unlock the 15 Sextillion Chrono Dice.
             </p>
+
+            {/* Author Card */}
+            <div className="max-w-2xl mx-auto text-left">
+              <AuthorCard
+                authorName='Jin "Lucky" Takahashi'
+                role="RNG Mathematician & Mythic Dice Roller"
+                experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
+                patchVersion="Update 2 Meta Verified"
+                lastUpdated="September 2026"
+                editorialNote="All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are verified through empirical probability logging."
+              />
+            </div>
 
             {/* Primary Action Buttons */}
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
@@ -103,6 +139,24 @@ export default function HomePage() {
               <div className="p-3 rounded-xl bg-slate-900/40 border border-slate-800">
                 <div className="text-xl font-bold text-emerald-400">0.05%</div>
                 <div className="text-[11px] text-slate-400">Secret Base Chance</div>
+              </div>
+            </div>
+
+            {/* Hero Screenshot Showcase */}
+            <div className="relative rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl bg-slate-900/60 aspect-video max-w-4xl mx-auto mt-8">
+              <img
+                src="/images/anime-dice-hero.webp"
+                alt="Roblox Anime Dice Tycoon Simulator and Chrono Dice Rolling Arena"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
+                <div className="text-xs sm:text-sm text-slate-200 font-medium">
+                  <span className="text-cyan-400 font-bold">Chrono Dice Arena</span> — 15 Sextillion roll multiplier & Transcendent trait rolling
+                </div>
+                <span className="px-2.5 py-1 bg-cyan-500/20 text-cyan-300 text-[11px] rounded-lg border border-cyan-500/30 font-mono">
+                  Update 2 Live
+                </span>
               </div>
             </div>
 

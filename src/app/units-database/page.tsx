@@ -61,6 +61,24 @@ export default function UnitsDatabasePage() {
         </p>
       </div>
 
+      {/* Characters Showcase Screenshot */}
+      <div className="relative rounded-2xl overflow-hidden border border-purple-500/30 shadow-2xl bg-slate-900/60 aspect-video max-w-4xl mx-auto my-6">
+        <img
+          src="/images/anime-dice-characters.webp"
+          alt="Roblox Anime Dice Characters Catalog and Mythic Secret Units"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
+          <div className="text-xs sm:text-sm text-slate-200 font-medium">
+            <span className="text-purple-400 font-bold">Characters Catalog</span> — Secret & Mythic anime fighter scaling and synergy abilities
+          </div>
+          <span className="px-2.5 py-1 bg-purple-500/20 text-purple-300 text-[11px] rounded-lg border border-purple-500/30 font-mono">
+            Roster: 49 Units
+          </span>
+        </div>
+      </div>
+
       {/* Filter Controls Bar */}
       <div className="glass-panel p-6 rounded-2xl space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
