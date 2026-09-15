@@ -1,78 +1,138 @@
-'use client';
-
-import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ShieldCheck, Lock, FileText, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Lock, Eye, Mail, Scale, ExternalLink, CheckCircle2 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy & Trust Center | Anime Dice Wiki',
+  description: 'Privacy policy, COPPA child safety disclosures, and data protection guidelines for Anime Dice fans.',
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: '/privacy-policy/',
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      
-      {/* Breadcrumb */}
-      <nav className="flex items-center gap-2 text-xs text-slate-400">
-        <Link href="/" className="hover:text-cyan-400 transition-colors">Home</Link>
-        <span>/</span>
-        <span className="text-cyan-300 font-semibold">Privacy Policy</span>
-      </nav>
-
-      {/* Header */}
-      <div className="text-center max-w-2xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
-          <Lock className="w-3.5 h-3.5 text-cyan-400" />
-          <span>Privacy & Cookie Disclosures</span>
+    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8 text-slate-200">
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center gap-2 text-xs text-indigo-400 font-mono">
+          <Link href="/" className="hover:text-indigo-300">Home</Link>
+          <span>/</span>
+          <span className="text-slate-200">Privacy Policy</span>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Privacy Policy & Terms
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-mono font-bold">
+          <ShieldCheck className="w-3.5 h-3.5" />
+          <span>ROBLOX FAN NETWORK TRUST CENTER</span>
+        </div>
+        <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
+          Privacy Policy &amp; Trust Disclosures
         </h1>
-        <p className="text-xs text-slate-400">
-          Last updated: September 2026 &middot; Compliant with Google AdSense & GDPR Standards
+        <p className="text-xs sm:text-sm text-slate-400">
+          Last updated: 2026. Unofficial fan companion and luck simulators for Anime Dice Simulator on Roblox.
         </p>
       </div>
 
-      <div className="glass-panel p-6 sm:p-8 rounded-2xl space-y-6 text-xs sm:text-sm text-slate-300 leading-relaxed">
-        
-        <section className="space-y-2">
-          <h2 className="text-base font-bold text-white flex items-center gap-2">
-            <FileText className="w-4 h-4 text-cyan-400" />
-            <span>1. Information We Collect</span>
-          </h2>
-          <p>
-            Anime Dice Wiki does not require registration, personal accounts, or passwords. We do not collect personally identifiable information (PII) such as your real name, physical address, or phone number. Standard web server log files automatically record anonymous technical information including your IP address, browser type, referring/exit pages, operating system, and date/time stamps.
-          </p>
-        </section>
-
-        <section className="space-y-2">
-          <h2 className="text-base font-bold text-white flex items-center gap-2">
-            <Lock className="w-4 h-4 text-cyan-400" />
-            <span>2. Cookies & Web Beacons</span>
-          </h2>
-          <p>
-            We use standard session cookies to store your client-side preferences (such as your active calculator parameters and notification dismissals). You can easily instruct your browser to refuse all cookies or to indicate when a cookie is being sent via your browser settings.
-          </p>
-        </section>
-
-        <section className="space-y-2">
-          <h2 className="text-base font-bold text-white flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-cyan-400" />
-            <span>3. Google AdSense & DoubleClick Dart Cookie</span>
-          </h2>
-          <p>
-            Google is a third-party vendor on our site. It uses cookies, known as DART cookies, to serve ads to our site visitors based on their visit to our website and other sites on the internet. Visitors may choose to decline the use of DART cookies by visiting the Google Ad and Content Network Privacy Policy.
-          </p>
-        </section>
-
-        <section className="space-y-2">
-          <h2 className="text-base font-bold text-white flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-            <span>4. Children&apos;s Privacy (COPPA Compliance)</span>
-          </h2>
-          <p>
-            Protecting the privacy of young children is especially important. Anime Dice Wiki is a general gaming information website and does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you believe your child provided this kind of information on our website, please contact us immediately.
-          </p>
-        </section>
-
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex items-center gap-3 text-xs">
+          <ShieldCheck className="h-5 w-5 shrink-0 text-emerald-400" />
+          <div>
+            <p className="font-bold text-white">COPPA Compliant</p>
+            <p className="text-slate-400 text-[11px]">Safe for under 13</p>
+          </div>
+        </div>
+        <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex items-center gap-3 text-xs">
+          <Lock className="h-5 w-5 shrink-0 text-amber-400" />
+          <div>
+            <p className="font-bold text-white">Zero Account Needed</p>
+            <p className="text-slate-400 text-[11px]">No passwords or Robux</p>
+          </div>
+        </div>
+        <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex items-center gap-3 text-xs">
+          <CheckCircle2 className="h-5 w-5 shrink-0 text-cyan-400" />
+          <div>
+            <p className="font-bold text-white">100% Client-Side</p>
+            <p className="text-slate-400 text-[11px]">Calculators run in browser</p>
+          </div>
+        </div>
+        <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-3 flex items-center gap-3 text-xs">
+          <Mail className="h-5 w-5 shrink-0 text-indigo-400" />
+          <div>
+            <p className="font-bold text-white">Verified Contact</p>
+            <p className="text-slate-400 text-[11px]">48h response SLA</p>
+          </div>
+        </div>
       </div>
 
-    </div>
+      <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 sm:p-8 space-y-6 text-slate-300 text-sm leading-relaxed">
+        <section className="space-y-2">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <Lock className="w-4 h-4 text-amber-400" />
+            <span>1. Zero Personal Data &amp; No Roblox Credentials</span>
+          </h2>
+          <p>
+            Anime Dice Wiki does not require registration or personal logins. We will <strong className="text-white">NEVER</strong> ask for your Roblox password, account cookies, or Robux. All luck simulators, roll calculators, and code copying tools operate entirely in your local browser.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+            <span>2. COPPA &amp; Child Safety Online Privacy Compliance</span>
+          </h2>
+          <p>
+            In compliance with the Children&apos;s Online Privacy Protection Act (COPPA), this website does not knowingly collect personal information from children under the age of 13.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <Eye className="w-4 h-4 text-cyan-400" />
+            <span>3. Telemetry, Cookies &amp; Advertising</span>
+          </h2>
+          <p>
+            We process anonymous, aggregate technical data to optimize server performance and page loading speed. Third-party advertising partners (such as Google AdSense) may use cookies to serve gaming ads based on prior visits. Opt out anytime at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-indigo-400 underline hover:text-indigo-300">Google Ads Settings</a>.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <ExternalLink className="w-4 h-4 text-blue-400" />
+            <span>4. External Platform Hyperlinks</span>
+          </h2>
+          <p>
+            Our site links to official Roblox experiences and community platforms. We assume no responsibility for the content or privacy policies of third-party domains.
+          </p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <Scale className="w-4 h-4 text-purple-400" />
+            <span>5. Intellectual Property &amp; Fair Use Disclaimer</span>
+          </h2>
+          <p>
+            Roblox is a registered trademark of Roblox Corporation. Anime Dice and game assets belong to their respective developers. This wiki is an independent fan community guide created for educational purposes under Fair Use.
+          </p>
+        </section>
+
+        <section className="space-y-2 border-t border-slate-800 pt-6">
+          <h2 className="text-base font-bold text-white flex items-center gap-2">
+            <Mail className="w-4 h-4 text-indigo-400" />
+            <span>6. Editorial &amp; Privacy Contact</span>
+          </h2>
+          <p>
+            For privacy inquiries, DMCA notices, or correction requests, reach our editorial team directly at:
+          </p>
+          <div className="inline-block rounded-xl border border-indigo-500/30 bg-indigo-950/40 p-3 font-mono text-sm font-bold text-indigo-300">
+            contact@robloxwikihub.com
+          </div>
+          <p className="text-xs text-slate-400 font-mono">
+            Inquiries are acknowledged and resolved within 48 business hours.
+          </p>
+        </section>
+      </div>
+    </main>
   );
 }
