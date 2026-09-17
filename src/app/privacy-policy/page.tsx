@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: '/privacy-policy/',
+    canonical: '/privacy-policy',
   },
 };
 
