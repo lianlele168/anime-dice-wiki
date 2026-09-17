@@ -10,7 +10,7 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = "Roblox Wiki Hub Research Desk"Lucky" Takahashi',
+  authorName = 'Kenji "Lucky" Takahashi',
   role = 'RNG Mathematician & Mythic Dice Roller',
   experience = 'Grade 10 Rebirth & 100M+ Rolls Simulated',
   patchVersion = 'Update 2 Meta Verified',

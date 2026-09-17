@@ -69,7 +69,7 @@ export default function RootLayout({
         "@type": "WebApplication",
         "@id": "https://animedice.robloxwikihub.com/#webapp",
         "name": "Anime Dice Luck & Odds Simulator",
-        "url": "https://animedice.robloxwikihub.com/calculator/",
+        "url": "https://animedice.robloxwikihub.com/calculator",
         "applicationCategory": "GameApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Requires HTML5."
