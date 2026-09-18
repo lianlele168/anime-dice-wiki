@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Anime Dice Grades Multipliers & Upgrade Guide (September 2026)',
   description: 'Comprehensive breakdown of all 11 grade ranks from F to Z+ in Anime Dice. Grade stat multipliers and reroll strategies.',
   alternates: {
-    canonical: '/grades-guide',
+    canonical: '/grades-guide/',
   },
   keywords: ['anime dice grades', 'anime dice z+ grade', 'anime dice grade multipliers'],
 };

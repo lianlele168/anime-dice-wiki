@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Anime Dice Units Database - Stats, Odds & DPS Rankings (September 2026)',
   description: 'Searchable database of all Secret, Mythic, and Legendary units in Anime Dice with DPS scaling, passive abilities, and roll odds.',
   alternates: {
-    canonical: '/units-database',
+    canonical: '/units-database/',
   },
   keywords: ['anime dice units database', 'anime dice all units', 'anime dice secret units list'],
 };

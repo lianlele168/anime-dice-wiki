@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Anime Dice Beginner Guide - 0 to 1B Roll Master Walkthrough',
   description: 'Complete progression guide for Anime Dice on Roblox. Learn Infinity Tower unlock, optimal potion stacking, and early rebirth routing.',
   alternates: {
-    canonical: '/beginner-guide',
+    canonical: '/beginner-guide/',
   },
   keywords: ['anime dice beginner guide', 'anime dice progression', 'anime dice infinity tower'],
 };

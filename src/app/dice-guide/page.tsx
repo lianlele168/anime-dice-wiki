@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Anime Dice All Dice Tier & Stat Multipliers Guide (September 2026)',
   description: 'Complete stats and roll speed multipliers for all 10+ dice in Anime Dice, including Chrono Dice and Void Walker.',
   alternates: {
-    canonical: '/dice-guide',
+    canonical: '/dice-guide/',
   },
   keywords: ['anime dice list', 'chrono dice anime dice', 'best dice anime dice'],
 };
