@@ -2,9 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Gift, Copy, Check, Sparkles, ShieldCheck, HelpCircle, ArrowRight, ExternalLink } from 'lucide-react';
+import { Copy, Check, Sparkles, ShieldCheck, HelpCircle, ArrowRight } from 'lucide-react';
 import { ACTIVE_CODES, EXPIRED_CODES } from '@/data/gameData';
 import Toast from '@/components/Toast';
+import LastVerified from '@/components/LastVerified';
+import AuthorCard from '@/components/AuthorCard';
 
 export default function CodesClient() {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
@@ -36,10 +38,7 @@ export default function CodesClient() {
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
-          <Gift className="w-3.5 h-3.5 text-cyan-400" />
-          <span>Verified Active Codes — Last checked September 18, 2026</span>
-        </div>
+        <LastVerified />
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Anime Dice Codes &amp; Rewards Hub
         </h1>
@@ -241,6 +240,14 @@ export default function CodesClient() {
         </Link>
       </div>
 
+      <AuthorCard
+        authorName="Kenji &quot;Lucky&quot; Takahashi"
+        role="Anime Dice Codes & RNG Analyst"
+        experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
+        patchVersion="Checked against Update 4"
+        lastUpdated="September 18, 2026"
+        editorialNote="Every code on this page is tested in-game before it is listed, and its exact Lucky Spin, Trait Reroll, Gem and Ticket payout is recorded so you can compare codes by value rather than by hype. Retired codes move to the archive instead of disappearing."
+      />
     </div>
   );
 }
