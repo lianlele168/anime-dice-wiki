@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Gift, Copy, Check, Sparkles, ShieldCheck, HelpCircle, ArrowRight, ExternalLink } from 'lucide-react';
-import { ACTIVE_CODES } from '@/data/gameData';
+import { ACTIVE_CODES, EXPIRED_CODES } from '@/data/gameData';
 import Toast from '@/components/Toast';
 
 export default function CodesClient() {
@@ -38,13 +38,13 @@ export default function CodesClient() {
       <div className="text-center max-w-3xl mx-auto space-y-3">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
           <Gift className="w-3.5 h-3.5 text-cyan-400" />
-          <span>September 2026 Verified Active Codes</span>
+          <span>Verified Active Codes — Last checked September 18, 2026</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Anime Dice Codes & Rewards Hub
+          Anime Dice Codes &amp; Rewards Hub
         </h1>
         <p className="text-sm text-slate-300 leading-relaxed">
-          Grab the latest working Anime Dice redeem codes for free Lucky Spins, Trait Rerolls, and Gems. All codes tested daily against More & More Games official servers.
+          All {ACTIVE_CODES.length} working Anime Dice codes for September 2026, each re-verified on September 18 against More &amp; More Games servers — with the exact Lucky Spins, Trait Rerolls, Gems and Tickets every code pays out.
         </p>
       </div>
 
@@ -163,31 +163,81 @@ export default function CodesClient() {
         </div>
       </div>
 
-      {/* Code FAQs & Tips */}
+      {/* Expired Codes Archive */}
       <div className="glass-panel p-6 rounded-2xl space-y-4">
-        <h3 className="text-base font-bold text-white">Why is my Anime Dice code not working?</h3>
-        <ul className="space-y-2 text-xs text-slate-400 leading-relaxed list-disc list-inside">
-          <li><strong>Case Sensitivity:</strong> Codes are strictly case-sensitive. Use our 1-click copy button above to avoid typing errors.</li>
-          <li><strong>Trailing Whitespace:</strong> If copying manually, ensure no trailing blank space is pasted into the redemption box.</li>
-          <li><strong>Expired Status:</strong> Codes expire when new update milestones are reached. Bookmark this page for daily verified lists.</li>
-          <li><strong>Single Use:</strong> Codes can only be redeemed once per Roblox account.</li>
-        </ul>
+        <div className="flex items-center justify-between">
+          <h3 className="text-base font-bold text-white">Expired Anime Dice Codes ({EXPIRED_CODES.length})</h3>
+          <span className="text-[11px] text-slate-500">Kept for reference — do not waste time typing these</span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {EXPIRED_CODES.map((item) => (
+            <div key={item.code} className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-between gap-3 text-xs">
+              <div>
+                <span className="font-mono font-bold text-slate-400 line-through">{item.code}</span>
+                <p className="text-[11px] text-slate-500 mt-0.5">{item.source}</p>
+              </div>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700 shrink-0">EXPIRED</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Anime Dice Codes FAQ */}
+      <div className="glass-panel p-6 sm:p-8 rounded-2xl space-y-6">
+        <h2 className="text-xl font-bold text-white flex items-center gap-2">
+          <HelpCircle className="w-5 h-5 text-cyan-400" />
+          <span>Anime Dice Codes FAQ</span>
+        </h2>
+        <div className="space-y-5 text-xs text-slate-300 leading-relaxed">
+          <div>
+            <h3 className="text-sm font-bold text-white">How do I redeem codes in Anime Dice?</h3>
+            <p className="mt-1">
+              Launch Anime Dice on Roblox, click the <strong>Shop</strong> icon on the left side of your screen, scroll all the way to the bottom of the Shop window, paste a code into the <strong>Enter Code</strong> box and press <strong>Redeem</strong>. Rewards land on your account immediately, so repeat the step for each code on the list above.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-white">Why is my Anime Dice code not working?</h3>
+            <p className="mt-1">
+              Four usual reasons. First, a typo — enter each code exactly as shown, and use our copy button so no stray trailing space comes along. Second, the code has already been claimed: each code is limited to <strong>one redemption per Roblox account</strong>. Third, milestone codes such as <strong>5KCCU</strong> or <strong>UPDATE3</strong> get retired once the next milestone drops — check the expired list above. Fourth, you may be on a stale server: leave the game, join a fresh server and try again.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-white">How many Anime Dice codes are working right now?</h3>
+            <p className="mt-1">
+              All {ACTIVE_CODES.length} codes listed above were confirmed working on September 18, 2026 — the likes-milestone code <strong>100KLIKES</strong> is the newest addition, and <strong>UPDATE4</strong> is the only code that also pays out Tickets. Together the full list is worth well over 20 Lucky Spins and 80 Trait Rerolls for a fresh account.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-white">When do new Anime Dice codes come out?</h3>
+            <p className="mt-1">
+              More &amp; More Games drops codes around major updates, new character additions and community milestones (likes, CCU and visit counts). There is no fixed calendar — the <strong>1KCCU / 5KCCU / 10KCCU / 20KCCU / 30KCCU / 40KCCU</strong> series shows new ones arrive as the CCU milestones keep climbing. New codes surface first in the Anime Dice Discord server. We re-verify this list daily.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Internal Navigation Callout */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 glass-card rounded-2xl border-cyan-500/20">
-        <div>
-          <h3 className="text-sm font-bold text-white">Used your free Trait Rerolls?</h3>
-          <p className="text-xs text-slate-400">
-            Check the Traits Tier list to see if your roll ranks S-Tier (Transcendent 15x or Monarch 8x).
-          </p>
-        </div>
-        <Link
-          href="/traits-tier-list/"
-          className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-xs flex items-center gap-2 shrink-0 hover:from-purple-500 hover:to-indigo-500 transition-all"
-        >
-          <span>Compare Traits</span>
-          <ArrowRight className="w-4 h-4" />
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <Link href="/traits-tier-list/" className="glass-panel p-5 rounded-2xl border-cyan-500/20 hover:border-cyan-500/40 transition-all group">
+          <h3 className="text-sm font-bold text-white flex items-center justify-between gap-2">
+            <span>Traits Tier List</span>
+            <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
+          </h3>
+          <p className="text-xs text-slate-400 mt-1.5">Spent your free rerolls? Check whether your roll hit S-Tier (Transcendent 15x or Monarch 8x).</p>
+        </Link>
+        <Link href="/units-database/" className="glass-panel p-5 rounded-2xl border-cyan-500/20 hover:border-cyan-500/40 transition-all group">
+          <h3 className="text-sm font-bold text-white flex items-center justify-between gap-2">
+            <span>Units Database</span>
+            <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
+          </h3>
+          <p className="text-xs text-slate-400 mt-1.5">Full stats for every unit you can pull with the Lucky Spins from these codes.</p>
+        </Link>
+        <Link href="/calculator/" className="glass-panel p-5 rounded-2xl border-cyan-500/20 hover:border-cyan-500/40 transition-all group">
+          <h3 className="text-sm font-bold text-white flex items-center justify-between gap-2">
+            <span>Dice Probability Calculator</span>
+            <ArrowRight className="w-4 h-4 text-cyan-400 group-hover:translate-x-0.5 transition-transform" />
+          </h3>
+          <p className="text-xs text-slate-400 mt-1.5">Work out the real odds of pulling a target unit before you spend your spins.</p>
         </Link>
       </div>
 
