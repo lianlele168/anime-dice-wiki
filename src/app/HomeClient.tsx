@@ -19,7 +19,7 @@ export default function HomeClient() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    dateModified: '2026-09-15',
+
     author: {
       '@type': 'Person',
       name: 'Jin "Lucky" Takahashi',
@@ -79,7 +79,7 @@ export default function HomeClient() {
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              The premier interactive encyclopedia and gacha simulator for Anime Dice. Calculate exact roll odds, copy verified September 2026 codes, optimize 15x Transcendent traits, and unlock the 15 Sextillion Chrono Dice.
+              The premier interactive encyclopedia and gacha simulator for Anime Dice. Calculate exact roll odds, copy verified codes, optimize 15x Transcendent traits, and unlock the 15 Sextillion Chrono Dice.
             </p>
 
             {/* Author Card */}
@@ -89,7 +89,6 @@ export default function HomeClient() {
                 role="RNG Mathematician & Mythic Dice Roller"
                 experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
                 patchVersion="Update 2 Meta Verified"
-                lastUpdated="September 2026"
                 editorialNote="All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are verified through empirical probability logging."
               />
             </div>
@@ -171,7 +170,7 @@ export default function HomeClient() {
             <div>
               <div className="flex items-center gap-2">
                 <Gift className="w-5 h-5 text-cyan-400" />
-                <h2 className="text-xl font-bold text-white">Active September 2026 Redeem Codes</h2>
+                <h2 className="text-xl font-bold text-white">Active Redeem Codes</h2>
               </div>
               <p className="text-xs text-slate-400 mt-1">
                 Redeem in the in-game Shop menu to receive free Lucky Spins, Trait Rerolls, and Gems.

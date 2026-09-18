@@ -2,7 +2,7 @@ export interface CodeItem {
   code: string;
   reward: string;
   status: 'Active' | 'Expired';
-  verifiedDate: string;
+
   source: string;
 }
 
@@ -68,26 +68,26 @@ export interface FaqItem {
 }
 
 export const ACTIVE_CODES: CodeItem[] = [
-  { code: '100KLIKES', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '100,000 Likes Community Milestone' },
-  { code: '40KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '40,000 CCU Community Milestone' },
-  { code: '30KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '30,000 CCU Community Milestone' },
-  { code: '20KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '20,000 CCU Community Milestone' },
-  { code: '10KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 7x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '10,000 CCU Community Milestone' },
-  { code: 'UPDATE4', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Tickets, 3x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: 'Update 4 Major Release' },
-  { code: '5KCCU', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '5,000 CCU Community Milestone' },
-  { code: '1KCCU', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: '1,000 CCU Milestone' },
-  { code: 'UPDATE3', reward: '2x Lucky Spins, 7x Trait Rerolls, 7x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: 'Update 3 Major Release' },
-  { code: 'UPDATE2', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: 'Update 2 Balance Patch' },
-  { code: 'UPDATE1', reward: '2x Lucky Spins, 3x Trait Rerolls, 3x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: 'Update 1 Release' },
-  { code: 'RELEASE', reward: '1x Lucky Spin, 2x Trait Rerolls, 2x Gems', status: 'Active', verifiedDate: 'September 18, 2026', source: 'Global Launch Celebration' },
+  { code: '100KLIKES', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', source: '100,000 Likes Community Milestone' },
+  { code: '40KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', source: '40,000 CCU Community Milestone' },
+  { code: '30KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', source: '30,000 CCU Community Milestone' },
+  { code: '20KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Gems', status: 'Active', source: '20,000 CCU Community Milestone' },
+  { code: '10KCCU', reward: '2x Lucky Spins, 10x Trait Rerolls, 7x Gems', status: 'Active', source: '10,000 CCU Community Milestone' },
+  { code: 'UPDATE4', reward: '2x Lucky Spins, 10x Trait Rerolls, 10x Tickets, 3x Gems', status: 'Active', source: 'Update 4 Major Release' },
+  { code: '5KCCU', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', source: '5,000 CCU Community Milestone' },
+  { code: '1KCCU', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', source: '1,000 CCU Milestone' },
+  { code: 'UPDATE3', reward: '2x Lucky Spins, 7x Trait Rerolls, 7x Gems', status: 'Active', source: 'Update 3 Major Release' },
+  { code: 'UPDATE2', reward: '2x Lucky Spins, 5x Trait Rerolls, 5x Gems', status: 'Active', source: 'Update 2 Balance Patch' },
+  { code: 'UPDATE1', reward: '2x Lucky Spins, 3x Trait Rerolls, 3x Gems', status: 'Active', source: 'Update 1 Release' },
+  { code: 'RELEASE', reward: '1x Lucky Spin, 2x Trait Rerolls, 2x Gems', status: 'Active', source: 'Global Launch Celebration' },
 ];
 
 export const EXPIRED_CODES: CodeItem[] = [
-  { code: '2MVISITS', reward: 'Milestone code — no longer redeemable', status: 'Expired', verifiedDate: 'September 18, 2026', source: '2,000,000 Visits Milestone' },
-  { code: 'UPDATE12', reward: 'Update code — no longer redeemable', status: 'Expired', verifiedDate: 'September 18, 2026', source: 'Update 12 Release' },
-  { code: '50LIKES', reward: 'Milestone code — no longer redeemable', status: 'Expired', verifiedDate: 'September 18, 2026', source: '50,000 Likes Milestone' },
-  { code: '15KLIKES', reward: 'Milestone code — no longer redeemable', status: 'Expired', verifiedDate: 'September 18, 2026', source: '15,000 Likes Milestone' },
-  { code: 'RESTART1', reward: 'Event code — no longer redeemable', status: 'Expired', verifiedDate: 'September 18, 2026', source: 'Restart Event' },
+  { code: '2MVISITS', reward: 'Milestone code — no longer redeemable', status: 'Expired', source: '2,000,000 Visits Milestone' },
+  { code: 'UPDATE12', reward: 'Update code — no longer redeemable', status: 'Expired', source: 'Update 12 Release' },
+  { code: '50LIKES', reward: 'Milestone code — no longer redeemable', status: 'Expired', source: '50,000 Likes Milestone' },
+  { code: '15KLIKES', reward: 'Milestone code — no longer redeemable', status: 'Expired', source: '15,000 Likes Milestone' },
+  { code: 'RESTART1', reward: 'Event code — no longer redeemable', status: 'Expired', source: 'Restart Event' },
 ];
 
 export const TRAITS_DATA: TraitItem[] = [

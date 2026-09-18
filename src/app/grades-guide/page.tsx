@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice Grades Multipliers & Upgrade Guide (September 2026)',
+  title: 'Anime Dice Grades Multipliers & Upgrade Guide ',
   description: 'Comprehensive breakdown of all 11 grade ranks from F to Z+ in Anime Dice. Grade stat multipliers and reroll strategies.',
   alternates: {
     canonical: '/grades-guide/',

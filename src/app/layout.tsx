@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Anime Dice Wiki & Calculator - Codes, Traits Tier List, Units & Chrono Dice",
     template: "%s | Anime Dice Wiki"
   },
-  description: "Comprehensive guide for Anime Dice on Roblox. Interactive Luck & Odds Calculator, September 2026 Redeem Codes, 13 Traits Tier List, Units Database, Chrono Dice stats & Rebirth multipliers.",
+  description: "Comprehensive guide for Anime Dice on Roblox. Interactive Luck & Odds Calculator, Redeem Codes, 13 Traits Tier List, Units Database, Chrono Dice stats & Rebirth multipliers.",
   keywords: [
     "anime dice roblox",
     "anime dice codes",

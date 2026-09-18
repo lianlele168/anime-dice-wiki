@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice Rebirth Milestones & Multipliers Guide (September 2026)',
+  title: 'Anime Dice Rebirth Milestones & Multipliers Guide ',
   description: 'Detailed Rebirth milestone requirements, luck multipliers, and unlock perks across all 15 rebirth tiers in Anime Dice.',
   alternates: {
     canonical: '/rebirth-guide/',

@@ -4,24 +4,24 @@ import CodesClient from './CodesClient';
 import { ACTIVE_CODES } from '@/data/gameData';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice Codes (September 2026) - 12 Working Codes for Free Spins & Gems',
+  title: 'Anime Dice Codes - 12 Working Codes for Free Spins & Gems',
   description:
-    'All 12 working Roblox Anime Dice codes for September 2026, re-verified on September 18. Claim free Lucky Spins, Trait Rerolls, Gems and Tickets with exact reward values and redemption steps.',
+    'All 12 working Roblox Anime Dice codes for, re-verified on September 18. Claim free Lucky Spins, Trait Rerolls, Gems and Tickets with exact reward values and redemption steps.',
   alternates: {
     canonical: '/codes/',
   },
   keywords: [
     'anime dice codes',
-    'anime dice codes september 2026',
+    'anime dice codes ',
     'anime dice free spins',
     'anime dice lucky spins',
     'anime dice trait rerolls',
     'roblox anime dice codes',
   ],
   openGraph: {
-    title: 'Anime Dice Codes (September 2026) - 12 Working Codes',
+    title: 'Anime Dice Codes - 12 Working Codes',
     description:
-      'All 12 working Anime Dice codes for September 2026 with exact Lucky Spins, Trait Rerolls and Gems values.',
+      'All 12 working Anime Dice codes for with exact Lucky Spins, Trait Rerolls and Gems values.',
     type: 'article',
   },
 };
@@ -40,7 +40,7 @@ const faqs = [
   {
     question: 'How many Anime Dice codes are working right now?',
     answer:
-      'All 12 codes listed above were confirmed working on September 18, 2026 - the likes-milestone code 100KLIKES is the newest addition, and UPDATE4 is the only code that also pays out Tickets. Together the full list is worth well over 20 Lucky Spins and 80 Trait Rerolls for a fresh account.',
+      'All 12 codes listed above were confirmed working on - the likes-milestone code 100KLIKES is the newest addition, and UPDATE4 is the only code that also pays out Tickets. Together the full list is worth well over 20 Lucky Spins and 80 Trait Rerolls for a fresh account.',
   },
   {
     question: 'When do new Anime Dice codes come out?',
@@ -52,7 +52,7 @@ const faqs = [
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  dateModified: '2026-09-18',
+
   author: {
     '@type': 'Person',
     name: 'Jin "Lucky" Takahashi',
@@ -71,7 +71,7 @@ const jsonLd = {
 const codeListLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Working Anime Dice Codes (September 2026)',
+  name: 'Working Anime Dice Codes ',
   numberOfItems: ACTIVE_CODES.length,
   itemListElement: ACTIVE_CODES.map((item, index) => ({
     '@type': 'ListItem',

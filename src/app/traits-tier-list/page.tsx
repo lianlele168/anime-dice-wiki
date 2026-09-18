@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import TraitsTierListClient from './TraitsTierListClient';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice 13 Traits Tier List & Dual Compare (September 2026)',
+  title: 'Anime Dice 13 Traits Tier List & Dual Compare ',
   description: 'Official ranking of all 13 traits in Anime Dice. Compare Transcendent, Monarch, and Sovereign with grade bonus multipliers.',
   alternates: {
     canonical: '/traits-tier-list/',

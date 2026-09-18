@@ -14,7 +14,7 @@ export default function AuthorCard({
   role = 'RNG Mathematician & Mythic Dice Roller',
   experience = 'Grade 10 Rebirth & 100M+ Rolls Simulated',
   patchVersion = 'Update 2 Meta Verified',
-  lastUpdated = 'September 2026',
+  lastUpdated = '',
   editorialNote = 'All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are verified through empirical probability logging.',
 }: AuthorCardProps) {
   return (
@@ -41,9 +41,7 @@ export default function AuthorCard({
           <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">
             ⚡ {patchVersion}
           </span>
-          <span className="text-xs text-slate-400">
-            Updated: <strong className="text-slate-200">{lastUpdated}</strong>
-          </span>
+          
         </div>
       </div>
 

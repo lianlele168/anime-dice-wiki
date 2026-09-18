@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import CalculatorClient from './CalculatorClient';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice Luck & Secret Pull Simulator (September 2026)',
+  title: 'Anime Dice Luck & Secret Pull Simulator ',
   description: 'Simulate roll odds with dice multipliers, potions, friend boosts, and rebirth tiers in Anime Dice. Calculate exact Secret unit drop rates.',
   alternates: {
     canonical: '/calculator/',

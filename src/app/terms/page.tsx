@@ -31,7 +31,7 @@ export default function TermsPage() {
           Terms of Use &amp; Service Guidelines
         </h1>
         <p className="text-xs sm:text-sm text-slate-400">
-          Last updated: 2026. Unofficial strategy companion for Anime Dice on Roblox.
+          Last updated. Unofficial strategy companion for Anime Dice on Roblox.
         </p>
       </div>
 

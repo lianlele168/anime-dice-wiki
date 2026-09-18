@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
           Privacy Policy &amp; Trust Disclosures
         </h1>
         <p className="text-xs sm:text-sm text-slate-400">
-          Last updated: 2026. Unofficial fan companion and luck simulators for Anime Dice Simulator on Roblox.
+          Last updated. Unofficial fan companion and luck simulators for Anime Dice Simulator on Roblox.
         </p>
       </div>
 

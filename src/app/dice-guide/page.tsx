@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Anime Dice All Dice Tier & Stat Multipliers Guide (September 2026)',
+  title: 'Anime Dice All Dice Tier & Stat Multipliers Guide ',
   description: 'Complete stats and roll speed multipliers for all 10+ dice in Anime Dice, including Chrono Dice and Void Walker.',
   alternates: {
     canonical: '/dice-guide/',

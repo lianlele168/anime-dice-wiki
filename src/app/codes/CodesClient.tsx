@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Copy, Check, Sparkles, ShieldCheck, HelpCircle, ArrowRight } from 'lucide-react';
 import { ACTIVE_CODES, EXPIRED_CODES } from '@/data/gameData';
 import Toast from '@/components/Toast';
-import LastVerified from '@/components/LastVerified';
+
 import AuthorCard from '@/components/AuthorCard';
 
 export default function CodesClient() {
@@ -38,12 +38,12 @@ export default function CodesClient() {
 
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-3">
-        <LastVerified />
+        
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Anime Dice Codes &amp; Rewards Hub
         </h1>
         <p className="text-sm text-slate-300 leading-relaxed">
-          All {ACTIVE_CODES.length} working Anime Dice codes for September 2026, each re-verified on September 18 against More &amp; More Games servers — with the exact Lucky Spins, Trait Rerolls, Gems and Tickets every code pays out.
+          All {ACTIVE_CODES.length} working Anime Dice codes for, each re-verified on September 18 against More &amp; More Games servers — with the exact Lucky Spins, Trait Rerolls, Gems and Tickets every code pays out.
         </p>
       </div>
 
@@ -104,7 +104,7 @@ export default function CodesClient() {
               </div>
 
               <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-500">
-                <span>Verified: {item.verifiedDate}</span>
+                <span></span>
                 <span className="text-slate-400">One-time redemption per account</span>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function CodesClient() {
           <div>
             <h3 className="text-sm font-bold text-white">How many Anime Dice codes are working right now?</h3>
             <p className="mt-1">
-              All {ACTIVE_CODES.length} codes listed above were confirmed working on September 18, 2026 — the likes-milestone code <strong>100KLIKES</strong> is the newest addition, and <strong>UPDATE4</strong> is the only code that also pays out Tickets. Together the full list is worth well over 20 Lucky Spins and 80 Trait Rerolls for a fresh account.
+              All {ACTIVE_CODES.length} codes listed above were confirmed working on — the likes-milestone code <strong>100KLIKES</strong> is the newest addition, and <strong>UPDATE4</strong> is the only code that also pays out Tickets. Together the full list is worth well over 20 Lucky Spins and 80 Trait Rerolls for a fresh account.
             </p>
           </div>
           <div>
@@ -245,7 +245,6 @@ export default function CodesClient() {
         role="Anime Dice Codes & RNG Analyst"
         experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
         patchVersion="Checked against Update 4"
-        lastUpdated="September 18, 2026"
         editorialNote="Every code on this page is tested in-game before it is listed, and its exact Lucky Spin, Trait Reroll, Gem and Ticket payout is recorded so you can compare codes by value rather than by hype. Retired codes move to the archive instead of disappearing."
       />
     </div>
