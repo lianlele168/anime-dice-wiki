@@ -96,7 +96,7 @@ export default function BeginnerGuidePage() {
             </div>
             <h3 className="text-base font-bold text-white">Rebirth 6+ & The 15 Sextillion Chrono Dice</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Stack Rebirths up to Tier 6+ (+2,400% Luck) to prepare for pulling Secret units. Once your combined plot income reaches Trillions per second, purchase the <strong>Chrono Dice</strong> (250x luck) to achieve permanent Secret roll dominance.
+              Stack Rebirths up to Tier 6+ (+2,400% Luck) to prepare for pulling Secret units. Once your combined plot income reaches Trillions per second, purchase the <strong>Chrono Dice</strong> (community-reported 250x luck — unverified) to achieve permanent Secret roll dominance.
             </p>
           </div>
 

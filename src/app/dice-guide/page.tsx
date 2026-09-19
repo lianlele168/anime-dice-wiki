@@ -54,12 +54,12 @@ export default function DiceGuidePage() {
               <Dice5 className="w-6 h-6 animate-pulse" />
             </div>
             <div>
-              <span className="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Endgame Meta Breakthrough</span>
+              <span className="text-[10px] font-bold text-pink-400 uppercase tracking-wider">Endgame Meta Breakthrough (Unverified)</span>
               <h2 className="text-2xl font-black text-white">Chrono Dice (15 Sextillion Cash)</h2>
             </div>
           </div>
           <span className="px-3 py-1 bg-pink-950 text-pink-300 border border-pink-500/40 rounded-full text-xs font-bold shrink-0">
-            250x Base Luck Multiplier
+            250x Luck (Community-reported)
           </span>
         </div>
 
@@ -77,12 +77,12 @@ export default function DiceGuidePage() {
           <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800">
             <div className="text-xs text-slate-400">Secret Pull Odds Impact</div>
             <div className="text-lg font-bold text-emerald-400 mt-1">+24,900% Odds Boost</div>
-            <div className="text-[11px] text-slate-500 mt-0.5">Essential for Secret hunters</div>
+            <div className="text-[11px] text-slate-500 mt-0.5">Community-reported — unverified</div>
           </div>
         </div>
 
         <p className="text-xs text-slate-300 leading-relaxed">
-          The Chrono Dice is widely recognized by top Roblox players as the primary endgame milestone. Because it scales multiplicatively with your Rebirth luck bonuses and server potions, combining the Chrono Dice with Rebirth 8 pushes your total effective luck past <strong>25,000x</strong>, drastically bringing down Secret unit thresholds from millions of rolls to manageable hundreds.
+          Community sources describe the Chrono Dice as the primary endgame milestone, reportedly priced at 15 Sextillion Cash with a 250x luck multiplier. Because it reportedly scales multiplicatively with your Rebirth luck bonuses and server potions, combining the Chrono Dice with Rebirth 8 could push your total effective luck past <strong>25,000x</strong>. Note: these figures are community-reported and currently unverified against official sources — always confirm current pricing and stats in the in-game Hub Shop.
         </p>
       </div>
 

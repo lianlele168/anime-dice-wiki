@@ -66,7 +66,7 @@ export default function HomeClient() {
             {/* Live Status Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold backdrop-blur-md shadow-lg shadow-cyan-950/50">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-              <span>Update 3 Verified &middot; 6 Working Codes &middot; Chrono Dice Meta</span>
+              <span>Update 3 Verified &middot; 6 Working Codes &middot; Chrono Dice Meta (Unverified)</span>
             </div>
 
             {/* H1 Title */}
@@ -79,7 +79,7 @@ export default function HomeClient() {
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              The premier interactive encyclopedia and gacha simulator for Anime Dice. Calculate exact roll odds, copy verified codes, optimize 15x Transcendent traits, and unlock the 15 Sextillion Chrono Dice.
+              The premier interactive encyclopedia and gacha simulator for Anime Dice. Calculate exact roll odds, copy verified codes, optimize 15x Transcendent traits, and aim for the community-reported 15 Sextillion Chrono Dice.
             </p>
 
             {/* Author Card */}
@@ -133,7 +133,7 @@ export default function HomeClient() {
               </div>
               <div className="p-3 rounded-xl bg-slate-900/40 border border-slate-800">
                 <div className="text-xl font-bold text-amber-400">15 Sextillion</div>
-                <div className="text-[11px] text-slate-400">Chrono Dice Cost</div>
+                <div className="text-[11px] text-slate-400">Chrono Dice Cost (Unverified)</div>
               </div>
               <div className="p-3 rounded-xl bg-slate-900/40 border border-slate-800">
                 <div className="text-xl font-bold text-emerald-400">0.05%</div>
@@ -151,7 +151,7 @@ export default function HomeClient() {
               />
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
                 <div className="text-xs sm:text-sm text-slate-200 font-medium">
-                  <span className="text-cyan-400 font-bold">Chrono Dice Arena</span> — 15 Sextillion roll multiplier & Transcendent trait rolling
+                  <span className="text-cyan-400 font-bold">Chrono Dice Arena</span> — community-reported 15 Sextillion roll multiplier & Transcendent trait rolling
                 </div>
                 <span className="px-2.5 py-1 bg-cyan-500/20 text-cyan-300 text-[11px] rounded-lg border border-cyan-500/30 font-mono">
                   Update 2 Live
@@ -305,7 +305,7 @@ export default function HomeClient() {
                   Dice Tech Tree
                 </h3>
                 <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                  Cash prices, roll cooldowns, and luck multipliers for all 8 dice tiers, including the 15 Sextillion Chrono Dice.
+                  Cash prices, roll cooldowns, and luck multipliers for all 8 dice tiers, including the community-reported 15 Sextillion Chrono Dice (unverified).
                 </p>
               </div>
             </div>
@@ -349,19 +349,10 @@ export default function HomeClient() {
               <h3 className="text-xl font-bold text-white mt-1 group-hover:text-cyan-300 transition-colors">
                 {unit.name}
               </h3>
-              <div className="mt-4 grid grid-cols-3 gap-2 p-3 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
-                <div>
-                  <div className="text-[10px] text-slate-400">Income/s</div>
-                  <div className="text-xs font-bold text-emerald-400">+${unit.incomePerSec.toLocaleString()}</div>
-                </div>
-                <div>
-                  <div className="text-[10px] text-slate-400">Base DMG</div>
-                  <div className="text-xs font-bold text-cyan-400">{unit.baseDamage.toLocaleString()}</div>
-                </div>
-                <div>
-                  <div className="text-[10px] text-slate-400">Health</div>
-                  <div className="text-xs font-bold text-purple-400">{unit.baseHealth.toLocaleString()}</div>
-                </div>
+              <div className="mt-4 p-3 bg-slate-950/60 rounded-xl border border-slate-800 text-center">
+                <div className="text-[10px] text-slate-400">Income / Damage / Health</div>
+                <div className="text-xs font-bold text-slate-400">Not documented</div>
+                <div className="text-[10px] text-slate-500 mt-1">Per-unit stats are not publicly documented</div>
               </div>
               <div className="mt-4 text-xs text-slate-400 line-clamp-2 leading-relaxed">
                 <span className="font-semibold text-slate-300">{unit.skillName}:</span> {unit.skillDescription}

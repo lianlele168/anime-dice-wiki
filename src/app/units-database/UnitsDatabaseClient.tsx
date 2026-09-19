@@ -12,7 +12,6 @@ export default function UnitsDatabaseClient() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedAnime, setSelectedAnime] = useState<string>('ALL');
   const [selectedRarity, setSelectedRarity] = useState<string>('ALL');
-  const [sortBy, setSortBy] = useState<'dps' | 'income' | 'damage' | 'health'>('dps');
 
   const ANIME_LIST = ['ALL', 'Solo Leveling', 'One Piece', 'Jujutsu Kaisen', 'Dragon Ball', 'Bleach', 'Naruto', 'Demon Slayer', 'Hunter x Hunter'];
   const RARITY_LIST = ['ALL', 'Secret', 'Mythic', 'Legendary', 'Epic', 'Rare', 'Common'];
@@ -28,14 +27,8 @@ export default function UnitsDatabaseClient() {
       const matchesRarity = selectedRarity === 'ALL' || unit.rarity === selectedRarity;
 
       return matchesSearch && matchesAnime && matchesRarity;
-    }).sort((a, b) => {
-      if (sortBy === 'dps') return b.dpsRating - a.dpsRating;
-      if (sortBy === 'income') return b.incomePerSec - a.incomePerSec;
-      if (sortBy === 'damage') return b.baseDamage - a.baseDamage;
-      if (sortBy === 'health') return b.baseHealth - a.baseHealth;
-      return 0;
-    });
-  }, [searchQuery, selectedAnime, selectedRarity, sortBy]);
+    }).sort((a, b) => a.name.localeCompare(b.name));
+  }, [searchQuery, selectedAnime, selectedRarity]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
@@ -57,7 +50,8 @@ export default function UnitsDatabaseClient() {
           Anime Dice Units & Characters Catalog
         </h1>
         <p className="text-sm text-slate-300 leading-relaxed">
-          Search all rollable anime characters in Anime Dice. Filter by franchise, evaluate base income per second for plot placing, and inspect combat skill multipliers for Infinity Tower climbing.
+          Search all rollable anime characters in Anime Dice. Filter by franchise, evaluate rarity bands, and inspect abilities for Infinity Tower climbing.
+          Per-unit stats (income / damage / health) are not publicly documented and the roster changes with each patch — always confirm in the in-game Index.
         </p>
       </div>
 
@@ -74,7 +68,7 @@ export default function UnitsDatabaseClient() {
             <span className="text-purple-400 font-bold">Characters Catalog</span> — Secret & Mythic anime fighter scaling and synergy abilities
           </div>
           <span className="px-2.5 py-1 bg-purple-500/20 text-purple-300 text-[11px] rounded-lg border border-purple-500/30 font-mono">
-            Roster: 49 Units
+            Roster: {UNITS_DATA.length} Units
           </span>
         </div>
       </div>
@@ -128,14 +122,12 @@ export default function UnitsDatabaseClient() {
           {/* Sort By */}
           <div className="md:col-span-2">
             <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as any)}
+              value="name"
+              onChange={() => {}}
+              disabled
               className="w-full py-2.5 px-3 rounded-xl bg-slate-900 border border-slate-700 text-xs font-medium text-slate-200 focus:outline-none focus:border-cyan-400"
             >
-              <option value="dps">Sort: DPS Rating</option>
-              <option value="income">Sort: Income/sec</option>
-              <option value="damage">Sort: Base Damage</option>
-              <option value="health">Sort: Base Health</option>
+              <option value="name">Sort: Name (A-Z)</option>
             </select>
           </div>
 
@@ -178,19 +170,10 @@ export default function UnitsDatabaseClient() {
               </h2>
 
               {/* Stats Box */}
-              <div className="grid grid-cols-3 gap-2 mt-4 p-3 bg-slate-950/70 rounded-xl border border-slate-800/80 text-center">
-                <div>
-                  <div className="text-[10px] text-slate-500">Income/s</div>
-                  <div className="text-xs font-extrabold text-emerald-400">+${unit.incomePerSec.toLocaleString()}</div>
-                </div>
-                <div>
-                  <div className="text-[10px] text-slate-500">Damage</div>
-                  <div className="text-xs font-extrabold text-cyan-400">{unit.baseDamage.toLocaleString()}</div>
-                </div>
-                <div>
-                  <div className="text-[10px] text-slate-500">Health</div>
-                  <div className="text-xs font-extrabold text-purple-400">{unit.baseHealth.toLocaleString()}</div>
-                </div>
+              <div className="mt-4 p-3 bg-slate-950/70 rounded-xl border border-slate-800/80 text-center">
+                <div className="text-[10px] text-slate-500">Income / Damage / Health</div>
+                <div className="text-xs font-extrabold text-slate-400">Not documented</div>
+                <div className="text-[10px] text-slate-500 mt-1">No public source publishes per-unit stats</div>
               </div>
 
               {/* Skill Details */}
@@ -207,7 +190,7 @@ export default function UnitsDatabaseClient() {
 
             {/* Bottom Meta */}
             <div className="mt-6 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs">
-              <span className="text-slate-500">Combat Power: <strong className="text-slate-200">{unit.dpsRating}/100</strong></span>
+              <span className="text-slate-500">Combat Power: <strong className="text-slate-200">{unit.dpsRating}</strong></span>
               <Link
                 href="/calculator/"
                 className="text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-0.5 text-[11px]"

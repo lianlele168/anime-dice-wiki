@@ -44,12 +44,12 @@ export interface UnitItem {
   name: string;
   anime: 'Solo Leveling' | 'One Piece' | 'Jujutsu Kaisen' | 'Dragon Ball' | 'Bleach' | 'Naruto' | 'Demon Slayer' | 'Hunter x Hunter';
   rarity: 'Secret' | 'Mythic' | 'Legendary' | 'Epic' | 'Rare' | 'Common';
-  incomePerSec: number;
-  baseDamage: number;
-  baseHealth: number;
+  incomePerSec: string; // 'Not documented' - no public source publishes per-unit stats
+  baseDamage: string; // 'Not documented'
+  baseHealth: string; // 'Not documented'
   skillName: string;
   skillDescription: string;
-  dpsRating: number;
+  dpsRating: string; // 'Not documented'
 }
 
 export interface RebirthMilestone {
@@ -255,8 +255,8 @@ export const DICE_DATA: DiceItem[] = [
   { id: 'diamond', name: 'Diamond Dice', cost: '10,000,000 Cash', costNumeric: 10000000, luckMultiplier: 12.0, cooldown: '1.2s', tier: 4, badge: 'Epic', specialEffect: '12x luck multiplier, dramatically improves Legendary pull rates' },
   { id: 'void', name: 'Void Dice', cost: '1,000,000,000 Cash', costNumeric: 1000000000, luckMultiplier: 35.0, cooldown: '1.0s', tier: 5, badge: 'Legendary', specialEffect: '35x luck multiplier with dark gravity speed roll animation' },
   { id: 'cosmic', name: 'Cosmic Dice', cost: '500,000,000,000 Cash', costNumeric: 500000000000, luckMultiplier: 100.0, cooldown: '0.9s', tier: 6, badge: 'Cosmic', specialEffect: '100x luck multiplier, essential for pulling Mythic tier units' },
-  { id: 'chrono', name: 'Chrono Dice', cost: '15 Sextillion Cash', costNumeric: 1.5e22, luckMultiplier: 250.0, cooldown: '0.8s', tier: 7, badge: 'Mythic (Verified)', specialEffect: 'Priced at 15 Sextillion Cash. Grants 250x luck to unlock Secret tier odds' },
-  { id: 'divine', name: 'Divine Dice', cost: '100 Septillion Cash', costNumeric: 1.0e26, luckMultiplier: 500.0, cooldown: '0.6s', tier: 8, badge: 'Godly Secret', specialEffect: '500x omnipotent luck aura with maximum auto-roll velocity' }
+  { id: 'chrono', name: 'Chrono Dice', cost: '15 Sextillion Cash', costNumeric: 1.5e22, luckMultiplier: 250.0, cooldown: '0.8s', tier: 7, badge: 'Unverified', specialEffect: 'Community-reported: 15 Sextillion Cash cost and 250x luck. Not verified against official sources' },
+  { id: 'divine', name: 'Divine Dice', cost: '100 Septillion Cash', costNumeric: 1.0e26, luckMultiplier: 500.0, cooldown: '0.6s', tier: 8, badge: 'Unverified', specialEffect: 'Community-reported: 100 Septillion Cash cost and 500x luck. No public source confirms these stats' }
 ];
 
 export const UNITS_DATA: UnitItem[] = [
@@ -265,216 +265,216 @@ export const UNITS_DATA: UnitItem[] = [
     name: 'Shadow Sovereign',
     anime: 'Solo Leveling',
     rarity: 'Secret',
-    incomePerSec: 50000,
-    baseDamage: 12000,
-    baseHealth: 35000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Arise: Monarch Domain',
     skillDescription: 'Summons an army of shadow soldiers that deal 300% AoE damage every 5 seconds and boost plot income by +25%.',
-    dpsRating: 99
+    dpsRating: 'Not documented'
   },
   {
     id: 'sun-god-joyboy',
     name: 'Sun God Joyboy',
     anime: 'One Piece',
     rarity: 'Secret',
-    incomePerSec: 45000,
-    baseDamage: 11500,
-    baseHealth: 32000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Bajrang Drum of Liberation',
     skillDescription: 'Strikes the ground with a massive fist, stunning all enemies for 3 seconds and doubling plot cash tick speed for 10 seconds.',
-    dpsRating: 98
+    dpsRating: 'Not documented'
   },
   {
     id: 'limitless-sorcerer',
     name: 'Limitless Sorcerer',
     anime: 'Jujutsu Kaisen',
     rarity: 'Secret',
-    incomePerSec: 42000,
-    baseDamage: 13000,
-    baseHealth: 30000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Hollow Purple Singularity',
     skillDescription: 'Deletes incoming wave boss shields with true piercing damage. Highest single-target burst DPS in the game.',
-    dpsRating: 100
+    dpsRating: 'Not documented'
   },
   {
     id: 'ultra-ego-destroyer',
     name: 'Ultra Ego Destroyer',
     anime: 'Dragon Ball',
     rarity: 'Secret',
-    incomePerSec: 40000,
-    baseDamage: 12500,
-    baseHealth: 34000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Hakai Sphere of Annihilation',
     skillDescription: 'Gains +10% attack damage each time health drops below 50%. Immune to boss crowd control.',
-    dpsRating: 97
+    dpsRating: 'Not documented'
   },
   {
     id: 'curse-king',
     name: 'Curse King',
     anime: 'Jujutsu Kaisen',
     rarity: 'Mythic',
-    incomePerSec: 15000,
-    baseDamage: 4500,
-    baseHealth: 10000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Malevolent Shrine Cleave',
     skillDescription: 'Dismantles surrounding enemies in a 360-degree perimeter, applying stacking bleed damage.',
-    dpsRating: 88
+    dpsRating: 'Not documented'
   },
   {
-    id: 'demon-slayer-prodigy',
-    name: 'Demon Slayer Prodigy',
+    id: 'aizan',
+    name: 'Aizan',
     anime: 'Bleach',
     rarity: 'Mythic',
-    incomePerSec: 14000,
-    baseDamage: 4800,
-    baseHealth: 9500,
-    skillName: 'Final Getsuga Mugetsu',
-    skillDescription: 'Unleashes an obsidian energy wave across the full battlefield line.',
-    dpsRating: 89
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
+    skillName: 'Kyoka Suigetsu (Parody)',
+    skillDescription: 'Bleach-parody illusion blade unit. Exact in-game stats are not documented - confirm in the in-game Index (roster changes each patch).',
+    dpsRating: 'Not documented'
   },
   {
     id: 'ultra-instinct-saiyan',
     name: 'Ultra Instinct Saiyan',
     anime: 'Dragon Ball',
     rarity: 'Mythic',
-    incomePerSec: 13500,
-    baseDamage: 4200,
-    baseHealth: 11000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Autonomous Silver Rush',
     skillDescription: 'Passively evades 30% of incoming boss attacks and counters with instant critical strikes.',
-    dpsRating: 87
+    dpsRating: 'Not documented'
   },
   {
     id: 'ant-king-berserker',
     name: 'Ant King Berserker',
     anime: 'Solo Leveling',
     rarity: 'Mythic',
-    incomePerSec: 12000,
-    baseDamage: 4000,
-    baseHealth: 12000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Gluttonous Predator',
     skillDescription: 'Heals for 15% of all damage dealt and emits a screech that lowers enemy defense by 25%.',
-    dpsRating: 86
+    dpsRating: 'Not documented'
   },
   {
     id: 'nine-tails-sage',
     name: 'Nine Tails Sage',
     anime: 'Naruto',
     rarity: 'Legendary',
-    incomePerSec: 3500,
-    baseDamage: 1200,
-    baseHealth: 3500,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Planetary Rasenshuriken',
     skillDescription: 'Launches a dual spinning vortex that shreds high-defense armored mobs.',
-    dpsRating: 75
+    dpsRating: 'Not documented'
   },
   {
     id: 'sorcerer-killer',
     name: 'Sorcerer Killer',
     anime: 'Jujutsu Kaisen',
     rarity: 'Legendary',
-    incomePerSec: 3200,
-    baseDamage: 1350,
-    baseHealth: 3000,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Inverted Spear Thrust',
     skillDescription: 'Nullifies magic barriers and deals 200% bonus critical damage to elite enemies.',
-    dpsRating: 77
+    dpsRating: 'Not documented'
   },
   {
     id: 'three-sword-pirate',
     name: 'Three Sword Pirate',
     anime: 'One Piece',
     rarity: 'Legendary',
-    incomePerSec: 3000,
-    baseDamage: 1250,
-    baseHealth: 3200,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'King of Hell Three-Dragon',
     skillDescription: 'Charges forward slashing all targets in a wide frontal cone.',
-    dpsRating: 74
+    dpsRating: 'Not documented'
   },
   {
     id: 'sun-breath-swordsman',
     name: 'Sun Breath Swordsman',
     anime: 'Demon Slayer',
     rarity: 'Legendary',
-    incomePerSec: 2800,
-    baseDamage: 1100,
-    baseHealth: 3100,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Hinokami Sun Dance',
     skillDescription: 'Continuous fire wheel slashes causing burn damage over time.',
-    dpsRating: 72
+    dpsRating: 'Not documented'
   },
   {
     id: 'lightning-assassin',
     name: 'Lightning Assassin',
     anime: 'Hunter x Hunter',
     rarity: 'Epic',
-    incomePerSec: 800,
-    baseDamage: 450,
-    baseHealth: 1200,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Godspeed Lightning Palm',
     skillDescription: 'Rapid electrical dashes that stun enemies for 1.5 seconds.',
-    dpsRating: 60
+    dpsRating: 'Not documented'
   },
   {
     id: 'shadow-shinobi',
     name: 'Shadow Shinobi',
     anime: 'Naruto',
     rarity: 'Epic',
-    incomePerSec: 750,
-    baseDamage: 420,
-    baseHealth: 1150,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Chidori Stream',
     skillDescription: 'Discharges lightning through ground tiles shocking nearby targets.',
-    dpsRating: 58
+    dpsRating: 'Not documented'
   },
   {
     id: 'flame-hashira',
     name: 'Flame Hashira',
     anime: 'Demon Slayer',
     rarity: 'Epic',
-    incomePerSec: 700,
-    baseDamage: 400,
-    baseHealth: 1300,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Ninth Form: Purgatory',
     skillDescription: 'High-impact dash leaving behind a wall of flame.',
-    dpsRating: 57
+    dpsRating: 'Not documented'
   },
   {
     id: 'rubber-pirate',
     name: 'Rubber Pirate',
     anime: 'One Piece',
     rarity: 'Rare',
-    incomePerSec: 250,
-    baseDamage: 150,
-    baseHealth: 400,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Gatling Punch',
     skillDescription: 'Fast multi-hit barrage on single targets.',
-    dpsRating: 40
+    dpsRating: 'Not documented'
   },
   {
     id: 'martial-turtle',
     name: 'Martial Turtle',
     anime: 'Dragon Ball',
     rarity: 'Rare',
-    incomePerSec: 100,
-    baseDamage: 60,
-    baseHealth: 180,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Destructo Disc',
     skillDescription: 'Spinning energy disc with armor penetration.',
-    dpsRating: 30
+    dpsRating: 'Not documented'
   },
   {
     id: 'academy-ninja',
     name: 'Academy Ninja',
     anime: 'Naruto',
     rarity: 'Common',
-    incomePerSec: 50,
-    baseDamage: 30,
-    baseHealth: 100,
+    incomePerSec: 'Not documented',
+    baseDamage: 'Not documented',
+    baseHealth: 'Not documented',
     skillName: 'Kunai Throw',
     skillDescription: 'Basic ranged weapon toss.',
-    dpsRating: 15
+    dpsRating: 'Not documented'
   }
 ];
 
@@ -508,7 +508,7 @@ export const FAQS_DATA: FaqItem[] = [
   {
     category: 'Dice Mechanics',
     question: 'How much does the Chrono Dice cost and is it worth buying?',
-    answer: 'The Chrono Dice costs 15 Sextillion Cash in the game shop and provides an enormous 250x luck multiplier with a 0.8s roll cooldown. It is currently the primary endgame dice for rolling Secret and Mythic units.'
+    answer: 'The Chrono Dice costs 15 Sextillion Cash in the game shop and provides an enormous 250x luck multiplier with a 0.8s roll cooldown. Note: these figures are community-reported and currently unverified against official sources.'
   },
   {
     category: 'Codes & Freebies',

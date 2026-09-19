@@ -38,7 +38,7 @@ export default function Header() {
     { title: 'Active 2026 Redeem Codes', url: '/codes/', desc: 'Claim free Lucky Spins, Gems & Trait Rerolls' },
     { title: 'Traits Tier List', url: '/traits-tier-list/', desc: 'Transcendent (15x), Monarch (8x), Shogun (5x)' },
     { title: 'Units Database', url: '/units-database/', desc: 'Full anime roster: Solo Leveling, DBZ, One Piece, JJK' },
-    { title: 'Dice Upgrades Guide', url: '/dice-guide/', desc: 'Chrono Dice (15 Sextillion), Void, Cosmic & Divine' },
+    { title: 'Dice Upgrades Guide', url: '/dice-guide/', desc: 'Chrono Dice (15 Sextillion, unverified), Void, Cosmic & Divine' },
     { title: 'Grades Multipliers', url: '/grades-guide/', desc: 'Z+ (25x), Z (15x), S+ (10x) multipliers & roll rates' },
     { title: 'Rebirth Progression Guide', url: '/rebirth-guide/', desc: 'Thresholds, permanent luck & optimal timing' },
     { title: '0 to 1B Beginner Guide', url: '/beginner-guide/', desc: 'Tower strategies, auto-roll macros & plot tips' },
