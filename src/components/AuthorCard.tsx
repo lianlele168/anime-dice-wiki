@@ -10,12 +10,12 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Kenji "Lucky" Takahashi',
-  role = 'RNG Mathematician & Mythic Dice Roller',
-  experience = 'Grade 10 Rebirth & 100M+ Rolls Simulated',
+  authorName = 'Hlele',
+  role = 'Editor',
+  experience = 'AI-assisted research, human-reviewed',
   patchVersion = 'Update 2 Meta Verified',
   lastUpdated = '',
-  editorialNote = 'All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are verified through empirical probability logging.',
+  editorialNote = 'All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified.',
 }: AuthorCardProps) {
   return (
     <div className="w-full rounded-2xl bg-slate-900/80 border border-purple-500/30 p-4 sm:p-5 backdrop-blur-md my-6 text-left shadow-lg">
@@ -50,7 +50,7 @@ export default function AuthorCard({
       </p>
       <div className="mt-3 pt-2 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400">
         <span>Methodology: <a href="https://robloxwikihub.com/about#methodology" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Roblox Wiki Hub Standards</a></span>
-        <span>Corrections: <a href="mailto:lianlele168@gmail.com" className="underline hover:text-white">lianlele168@gmail.com</a></span>
+        <span>Corrections: <a href="mailto:lianlele168@gmail" className="underline hover:text-white">lianlele168@gmail</a></span>
       </div>
     </div>
   );

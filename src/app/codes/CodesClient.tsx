@@ -241,9 +241,9 @@ export default function CodesClient() {
       </div>
 
       <AuthorCard
-        authorName="Kenji &quot;Lucky&quot; Takahashi"
-        role="Anime Dice Codes & RNG Analyst"
-        experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
+        authorName="Hlele"
+        role="Editor"
+        experience="AI-assisted research, human-reviewed"
         patchVersion="Checked against Update 4"
         editorialNote="Every code on this page is tested in-game before it is listed, and its exact Lucky Spin, Trait Reroll, Gem and Ticket payout is recorded so you can compare codes by value rather than by hype. Retired codes move to the archive instead of disappearing."
       />

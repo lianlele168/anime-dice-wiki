@@ -91,6 +91,9 @@ export default function Footer() {
             <Heart className="w-3 h-3 text-red-500 fill-red-500" />
             <span>for Roblox gamers</span>
           </div>
+          <div className="mt-3 text-[11px] text-gray-600 text-center">
+            <p>Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail</p>
+          </div>
         </div>
 
       </div>

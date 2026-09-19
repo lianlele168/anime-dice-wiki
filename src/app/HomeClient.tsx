@@ -22,8 +22,8 @@ export default function HomeClient() {
 
     author: {
       '@type': 'Person',
-      name: 'Jin "Lucky" Takahashi',
-      jobTitle: 'RNG Mathematician & Mythic Dice Roller',
+      name: 'Hlele',
+      jobTitle: 'Editor',
     },
     mainEntity: FAQS_DATA.map((faq) => ({
       '@type': 'Question',
@@ -85,11 +85,11 @@ export default function HomeClient() {
             {/* Author Card */}
             <div className="max-w-2xl mx-auto text-left">
               <AuthorCard
-                authorName='Jin "Lucky" Takahashi'
-                role="RNG Mathematician & Mythic Dice Roller"
-                experience="Grade 10 Rebirth & 100M+ Rolls Simulated"
+                authorName='Hlele'
+                role="Editor"
+                experience="AI-assisted research, human-reviewed"
                 patchVersion="Update 2 Meta Verified"
-                editorialNote="All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are verified through empirical probability logging."
+                editorialNote="All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified."
               />
             </div>
 

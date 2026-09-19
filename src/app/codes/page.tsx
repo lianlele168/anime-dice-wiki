@@ -55,8 +55,8 @@ const jsonLd = {
 
   author: {
     '@type': 'Person',
-    name: 'Jin "Lucky" Takahashi',
-    jobTitle: 'RNG Mathematician & Mythic Dice Roller',
+    name: 'Hlele',
+    jobTitle: 'Editor',
   },
   mainEntity: faqs.map((faq) => ({
     '@type': 'Question',
