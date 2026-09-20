@@ -45,7 +45,7 @@ const faqs = [
   {
     question: 'When do new Anime Dice codes come out?',
     answer:
-      'More & More Games drops codes around major updates, new character additions and community milestones (likes, CCU and visit counts). There is no fixed calendar - the 1KCCU / 5KCCU / 10KCCU / 20KCCU / 30KCCU / 40KCCU series shows new ones arrive as the CCU milestones keep climbing. New codes surface first in the Anime Dice Discord server. We re-verify this list daily.',
+      'More & More Games drops codes around major updates, new character additions and community milestones (likes, CCU and visit counts). There is no fixed calendar - the 1KCCU / 5KCCU / 10KCCU / 20KCCU / 30KCCU / 40KCCU series shows new ones arrive as the CCU milestones keep climbing. New codes surface first in the Anime Dice Discord server. We re-check this list against the sources above.',
   },
 ];
 

@@ -209,7 +209,7 @@ export default function CodesClient() {
           <div>
             <h3 className="text-sm font-bold text-white">When do new Anime Dice codes come out?</h3>
             <p className="mt-1">
-              More &amp; More Games drops codes around major updates, new character additions and community milestones (likes, CCU and visit counts). There is no fixed calendar — the <strong>1KCCU / 5KCCU / 10KCCU / 20KCCU / 30KCCU / 40KCCU</strong> series shows new ones arrive as the CCU milestones keep climbing. New codes surface first in the Anime Dice Discord server. We re-verify this list daily.
+              More &amp; More Games drops codes around major updates, new character additions and community milestones (likes, CCU and visit counts). There is no fixed calendar — the <strong>1KCCU / 5KCCU / 10KCCU / 20KCCU / 30KCCU / 40KCCU</strong> series shows new ones arrive as the CCU milestones keep climbing. New codes surface first in the Anime Dice Discord server. We re-check this list against the sources above.
             </p>
           </div>
         </div>
