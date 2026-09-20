@@ -88,7 +88,7 @@ export default function HomeClient() {
                 authorName='Hlele'
                 role="Editor"
                 experience="AI-assisted research, human-reviewed"
-                patchVersion="Update 2 Meta Verified"
+                patchVersion="Update 2 Meta"
                 editorialNote="All dice luck multipliers, trait roll drop percentages, and grade ascension thresholds are cross-checked against multiple community sources; any figure we could not independently confirm is explicitly labeled as unverified."
               />
             </div>

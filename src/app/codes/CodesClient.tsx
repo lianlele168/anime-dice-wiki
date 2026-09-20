@@ -245,7 +245,7 @@ export default function CodesClient() {
         role="Editor"
         experience="AI-assisted research, human-reviewed"
         patchVersion="Checked against Update 4"
-        editorialNote="Every code on this page is tested in-game before it is listed, and its exact Lucky Spin, Trait Reroll, Gem and Ticket payout is recorded so you can compare codes by value rather than by hype. Retired codes move to the archive instead of disappearing."
+        editorialNote="Every code on this page is cross-checked against the developer's official channels and multiple community sources before it is listed, and its reported Lucky Spin, Trait Reroll, Gem and Ticket payout is recorded so you can compare codes by value rather than by hype. Retired codes move to the archive instead of disappearing."
       />
     </div>
   );
