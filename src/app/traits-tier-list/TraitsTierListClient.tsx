@@ -44,7 +44,7 @@ export default function TraitsTierListClient() {
       <div className="text-center max-w-3xl mx-auto space-y-3">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/80 border border-purple-500/30 text-purple-300 text-xs font-semibold">
           <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-          <span>Update 3 Verified Stat Multipliers</span>
+          <span>Update 3 Stat Multipliers</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
           Anime Dice Traits Tier List & Synergy Tool

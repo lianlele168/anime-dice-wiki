@@ -66,7 +66,7 @@ export default function HomeClient() {
             {/* Live Status Pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold backdrop-blur-md shadow-lg shadow-cyan-950/50">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-              <span>Update 3 Verified &middot; 6 Working Codes &middot; Chrono Dice Meta (Unverified)</span>
+              <span>Update 3 &middot; 6 Working Codes &middot; Chrono Dice Meta (Unverified)</span>
             </div>
 
             {/* H1 Title */}
@@ -195,7 +195,7 @@ export default function HomeClient() {
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-base font-bold text-cyan-300">{item.code}</span>
                     <span className="px-1.5 py-0.5 text-[9px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-500/30 rounded">
-                      VERIFIED
+                      SOURCED
                     </span>
                   </div>
                   <div className="text-xs text-slate-400 mt-1 line-clamp-1">{item.reward}</div>

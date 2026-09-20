@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
             <div className="pt-1 flex items-center gap-2 text-[11px] text-cyan-400/80">
               <ShieldCheck className="w-4 h-4 text-cyan-400" />
-              <span>Independent Fan Project &middot; E-E-A-T Verified</span>
+              <span>Independent Fan Project &middot; Independent editorial</span>
             </div>
           </div>
 

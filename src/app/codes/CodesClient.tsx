@@ -56,7 +56,7 @@ export default function CodesClient() {
           </h2>
           <span className="text-xs text-emerald-400 font-semibold flex items-center gap-1">
             <ShieldCheck className="w-4 h-4" />
-            <span>100% Tested Working</span>
+            <span>Working</span>
           </span>
         </div>
 
